@@ -248,19 +248,72 @@
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-inner">
-        <p class="eyebrow">HAVE A PROJECT?</p>
-        <h2>Let's make your<br><em>next upload better.</em></h2>
-        <p>Tell me what you're creating, what you need edited and when you need it. I'll get back to you with the next steps.</p>
-        <div class="contact-actions">
-          <a class="button button-light" href="mailto:naomieffiong.official@gmail.com">Email me <span>↗</span></a>
-          <a class="button button-outline" href="https://www.tiktok.com/@naomi.effiong" target="_blank" rel="noopener">TikTok <span>↗</span></a>
+    <section class="contact-section contact-form-section" id="contact">
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">LET'S TALK</p>
+          <h2>Tell me about<br><em>your project.</em></h2>
+          <p>Share a few details about the content you're creating, the service you need and your timeline. I'll review your enquiry and get back to you with the next steps.</p>
+
+          <div class="contact-details">
+            <div>
+              <span>EMAIL</span>
+              <a href="mailto:workwith.naomieffiong@gmail.com">workwith.naomieffiong@gmail.com</a>
+            </div>
+            <div>
+              <span>WORKING WITH</span>
+              <strong>Creators, podcasters & brands worldwide</strong>
+            </div>
+            <div>
+              <span>RESPONSE</span>
+              <strong>Usually within 1–2 business days</strong>
+            </div>
+          </div>
         </div>
-        <div class="contact-bottom">
-          <span>NAOMI EFFIONG</span>
-          <span>VIDEO EDITOR · CONTENT SCRIPTING</span>
-        </div>
+
+        <form class="inquiry-form" id="inquiry-form">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" required>
+
+          <label for="channel">Channel / website link</label>
+          <input id="channel" name="channel" type="url" placeholder="youtube.com/@yourchannel">
+
+          <div class="form-row">
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option>Long-form YouTube</option>
+                <option>Podcast Editing</option>
+                <option>Short-form Video</option>
+                <option>Content Repurposing</option>
+                <option>Content Scripting</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div>
+              <label for="cadence">Cadence</label>
+              <select id="cadence" name="cadence">
+                <option>One project</option>
+                <option>Weekly</option>
+                <option>Bi-weekly</option>
+                <option>Monthly</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="project">Tell me about the project</label>
+          <textarea id="project" name="project" placeholder="What are you creating, how much footage do you have, and when do you need it?"></textarea>
+
+          <div class="form-submit-row">
+            <p>By sending this enquiry, you agree to be contacted about your project.</p>
+            <button class="submit-button" type="submit">Send enquiry <span>↗</span></button>
+          </div>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
