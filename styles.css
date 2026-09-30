@@ -295,3 +295,50 @@ a{color:inherit;text-decoration:none}
   #work .long-form-category .portfolio-grid,
   #work .short-form-category .portfolio-grid{grid-template-columns:1fr!important}
 }
+
+
+/* Services — inspired by reference, original wording */
+#services.services-section{background:#171615;color:#f5f2ed;padding-top:105px;padding-bottom:105px}
+#services .services-intro{max-width:900px;margin:0 auto 58px}
+#services .services-intro .eyebrow{color:#9eaf9b}
+#services .services-intro h2{font-size:clamp(40px,4.4vw,62px);line-height:1.08;letter-spacing:-.045em;margin:20px 0 25px}
+#services .services-intro h2 em{font-family:"Playfair Display",serif;font-weight:500}
+#services .services-lead{max-width:720px;color:#bdb7b0;font-size:17px;line-height:1.7;margin:0}
+#services .services-grid{
+  max-width:1120px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border:1px solid #3a3734;
+  border-radius:14px;
+  overflow:hidden;
+}
+#services .service{
+  min-height:390px;
+  padding:34px 28px 30px;
+  border:0;
+  border-right:1px solid #3a3734;
+  background:transparent;
+  display:flex;
+  flex-direction:column;
+}
+#services .service:last-child{border-right:0}
+#services .service-number{color:#9eaf9b;font-size:12px;letter-spacing:.08em}
+#services .service-rule{width:38px;height:1px;background:#4a4743;margin:0 0 34px auto}
+#services .service h3{font-size:21px;line-height:1.2;margin:0 0 16px;color:#f5f2ed}
+#services .service p{color:#bdb7b0;font-size:14px;line-height:1.65;margin:0;max-width:250px}
+#services .service ul{margin:auto 0 0;padding:20px 0 0;border-top:1px solid #3a3734;color:#c8c1ba;font-size:13px}
+#services .service li{margin:10px 0;list-style:none}
+#services .service li:before{content:"•";color:#71886b;margin-right:10px}
+@media(max-width:1000px){
+  #services .services-grid{grid-template-columns:repeat(2,1fr)}
+  #services .service:nth-child(2){border-right:0}
+  #services .service:nth-child(-n+2){border-bottom:1px solid #3a3734}
+}
+@media(max-width:600px){
+  #services.services-section{padding:80px 7vw}
+  #services .services-grid{grid-template-columns:1fr}
+  #services .service{border-right:0;border-bottom:1px solid #3a3734;min-height:330px}
+  #services .service:last-child{border-bottom:0}
+  #services .service:nth-child(2){border-right:0}
+}
